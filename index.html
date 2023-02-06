@@ -16,6 +16,7 @@
     />
     <script src="./js/window_on_scroll/window_on_scroll.js"></script>
     <script src="./js/window_on_scroll/change_hamburger_color.js"></script>
+    <script src="./js/window_on_scroll/change_entry_button_color.js"></script>
   </head>
 
   <body>
@@ -54,8 +55,8 @@
         <p class="day_dy">2023.03.18</p>
         <p class="day_smal">SAT</p>
       </div>
-      <div class="stk_wrap">
-        <p class="en_link"><a href="#">ENTRY</a></p>
+      <div id="entry_link_parent" class="stk_wrap">
+        <p class="en_link"><a id="entry_link" href="#">ENTRY</a></p>
       </div>
     </header>
     <div class="pc_wrapper">
@@ -107,7 +108,7 @@
         <img src="imges/map.svg" alt="" />
       </section>
 
-      <section class="entry_wrap">
+      <section id="entry_section" class="entry_wrap">
         <div class="c-btn_wrap">
           <!--				ボタン-->
           <a href="#"><div class="c-btn">ENTRY</div></a>

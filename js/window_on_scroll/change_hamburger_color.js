@@ -1,4 +1,4 @@
-function change_hamburger_color() {
+function change_hamburger_color_pc() {
   // 要素取得
   const aboutSection = document.getElementById("about_section");
   const hamburgerMenu = document.getElementById("hamburger_menu");
@@ -29,4 +29,9 @@ function change_hamburger_color() {
             #262222 100%
           )`;
   }
+}
+
+function change_hamburger_color_sm() {
+  const hamburgerMenu = document.getElementById("hamburger_menu");
+  hamburgerMenu.style.backgroundImage = "";
 }
