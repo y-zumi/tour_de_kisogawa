@@ -866,21 +866,13 @@ textarea:focus {
     width: 100px;
     height: 100vh;
     left: 0;
-    /* background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #ffffffff 20%,
-      #000 20%,
-      #000 30%,
-      #ffffff 30%,
-      #ffffffff 100%
-    ); */
   }
 
   header .hamburger span {
     inset: 0;
     margin: auto;
-    /* mix-blend-mode: difference; */
+    /* ハンバーガメニューの背景色がJSで動的に変更されるので、メニューの背景色に応じてハンバーガ部分の色もblend-modeで動的に変更させる */
+    mix-blend-mode: difference;
   }
 
   header .hamburger span:first-child {
