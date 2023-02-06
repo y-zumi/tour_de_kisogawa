@@ -1,8 +1,4 @@
-window.onscroll = function () {
-  // PC版のみ反映
-  const mediaQueryPC = window.matchMedia("only screen and (min-width: 960px)");
-  if (!mediaQueryPC.matches) return;
-
+function change_hamburger_color() {
   // 要素取得
   const aboutSection = document.getElementById("about_section");
   const hamburgerMenu = document.getElementById("hamburger_menu");
@@ -25,12 +21,12 @@ window.onscroll = function () {
     hamburgerMenu.style.backgroundImage = `
         linear-gradient(
             180deg,
-            #000 0%,
-            #000 ${100 - positionTop}%,
+            #262222 0%,
+            #262222 ${100 - positionTop}%,
             #fff ${100 - positionTop}%,
             #fff ${100 - positionBottom}%,
-            #000 ${100 - positionBottom}%,
-            #000 100%
+            #262222 ${100 - positionBottom}%,
+            #262222 100%
           )`;
   }
-};
+}
